@@ -435,17 +435,9 @@ span {
     font-size: 18px;
   }
 }
-swiper-container {
-  width: 100%;
-  height: 100%;
-}
 
-swiper-slide {
-  display: flex;
-  margin: 0.8rem;
-  justify-content: center;
-  width: fit-content !important;
-}
+
+
 
 @media (max-width: 660px) {
   .footer .containerx {
@@ -454,17 +446,7 @@ swiper-slide {
   .filter {
     margin-right: 0;
   }
-  swiper-container {
-    width: 100%;
-    height: 100%;
-  }
 
-  swiper-slide {
-    display: flex;
-    margin: 0.8rem;
-    justify-content: center;
-    width: fit-content !important;
-  }
   @media only screen and (max-width: 400px) {
     .imgcontainer {
       width: 100%;
