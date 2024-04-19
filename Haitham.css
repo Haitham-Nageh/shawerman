@@ -13,7 +13,9 @@
   --main-padding-bottom: 100px;
   --section-background: #ececec;
 }
-
+body{
+  overflow-x: hidden;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -346,6 +348,7 @@ span {
 /*start footer*/
 .footer {
   margin-top: 10rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .footer .containerx {
@@ -365,11 +368,11 @@ span {
 
 .footer .containerx h3 {
   color: rgb(254, 185, 20);
+  font-size: 15px;
 }
 
 .footer .containerx ul {
   display: flex;
-  flex-direction: column;
   gap: 10px;
 }
 
@@ -381,32 +384,32 @@ span {
 
 /*fa-whatsapp*/
 .footer .containerx .fa-whatsapp {
-  color: green;
-  font-size: 30px;
+  color: #00df00;
+  font-size: 25px;
   cursor: pointer;
 }
 
 .footer .containerx .fa-facebook {
-  color: blue;
-  font-size: 30px;
+  color: #7777ff;
+  font-size: 25px;
   cursor: pointer;
 }
 
 .footer .containerx .fa-tiktok {
-  color: #204681;
-  font-size: 30px;
+  color: #6aa4ff;
+  font-size: 25px;
   cursor: pointer;
 }
 
 .footer .containerx .fa-instagram {
-  color: #ff7f07;
-  font-size: 30px;
+  color: #f8b576;
+  font-size: 25px;
   cursor: pointer;
 }
 
 .footer .containerx .fa-phone {
-  color: rgb(64, 246, 64);
-  font-size: 25px;
+  color: rgb(235 254 34);
+  font-size: 20px;
   cursor: pointer;
 }
 
