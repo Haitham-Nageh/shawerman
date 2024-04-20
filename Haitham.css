@@ -161,7 +161,7 @@ span {
   display: block;
   cursor: pointer;
   top: 35%;
-  display: none;
+ 
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
@@ -169,6 +169,7 @@ span {
   font-size: 1.6em;
   text-shadow: 1px 5px 10px black;
   transition-duration: 0.3s;
+  color: white;
 }
 .text {
   position: absolute;
@@ -179,10 +180,11 @@ span {
   left: 50%;
   text-shadow: 1px 5px 10px black;
   font-size: 1em;
-  display: none;
+  display: block;
   margin-right: -50%;
   transition-duration: 0.3s;
   transform: translate(-50%, -50%);
+  color: white;
 }
 .details {
   position: absolute;
@@ -313,6 +315,9 @@ span {
   .popup p {
     font-size: 15px;
   }
+  .footer .containerx{
+    background: url(imgs/resize11.jpg)!important;
+  }
 }
 .imgcontainer:hover img {
   transform: scale(1.2);
@@ -320,12 +325,13 @@ span {
   filter: grayscale(50%);
   opacity: 0.7;
 }
+/*
 .imgcontainer:hover span {
   color: white;
   display: block;
   transition: 0.3s;
 }
-
+*/
 /*--------------*/
 /*End Filter*/
 /*Start Brief*/
@@ -381,40 +387,25 @@ span {
   align-items: center;
   gap: 15px;
 }
-
-/*fa-whatsapp*/
-.footer .containerx .fa-whatsapp {
-  color: #00df00;
-  font-size: 25px;
-  cursor: pointer;
-}
-
-.footer .containerx .fa-facebook {
-  color: #7777ff;
-  font-size: 25px;
-  cursor: pointer;
-}
-
-.footer .containerx .fa-tiktok {
-  color: #6aa4ff;
-  font-size: 25px;
-  cursor: pointer;
-}
-
-.footer .containerx .fa-instagram {
-  color: #f8b576;
-  font-size: 25px;
-  cursor: pointer;
-}
-
-.footer .containerx .fa-phone {
-  color: rgb(235 254 34);
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.footer .containerx svg:hover {
+.footer .containerx .fa-instagram, .fa-phone,.fa-tiktok, .fa-facebook,.fa-whatsapp{
   color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+.footer .containerx .fa-instagram:hover{
+  color: tomato;
+}
+.footer .containerx .fa-phone:hover{
+  color:#48ff00;
+}
+.footer .containerx .fa-tiktok:hover{
+  color:#002bff;
+}
+.footer .containerx .fa-facebook:hover{
+  color:#0051ff;
+}
+.footer .containerx .fa-whatsapp:hover{
+  color:#22ff00;
 }
 
 .footer .containerx a {

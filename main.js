@@ -5,6 +5,7 @@ filterBtns.forEach((btn) => {
     // remove class 'active' from all buttons
     filterBtns.forEach((el) => {
       el.classList.remove("active");
+     
     });
     // add class 'active' to
     btn.classList.add("active");
