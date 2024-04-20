@@ -46,7 +46,7 @@
         <swiper-slide><button class="all active" data-search="all">
             الكل
           </button></swiper-slide>
-        <swiper-slide><button class="solo" data-search="solo">
+        <swiper-slide><button class="solo" data-search="solo" >
             الوجبات الفردية
           </button></swiper-slide>
         <swiper-slide><button class="sand" data-search="sand">
@@ -221,6 +221,12 @@
       <span class="text">😍برجر ع طريقة شاورمان السرية</span>
       <button type="submit" class="details" data-index="20">أنقر لعرض التفاصيل</button>
     </div>
+    <div class="imgcontainer solo">
+      <img src="imgs/soloshrak.jpg" alt="" />
+      <span class="title">دبل شراك شاورمان</span>
+      <span class="text">🥰الشاورما لحالها بتحكي</span>
+      <button type="submit" class="details" data-index="21">أنقر لعرض التفاصيل</button>
+    </div>
   </div>
   <!--End Gallery-->
   
@@ -262,7 +268,7 @@
       }
       , {
         components: 'لفة& صاروخ شاورمان',
-        chickenPrice: [17,15]
+        chickenPrice: 15
       }
       , {
         components: 'ماكسيكانو',
@@ -278,19 +284,19 @@
       }
       , {
         components: ' مازنجر',
-        chickenPrice: 19
+        chickenPrice: 15
       }
       , {
-        components: 'مينيز 3 حبات',
-        chickenPrice: 20
+        components: ' مينيز 3 حبات ,5 حبات',
+        chickenPrice: [30,20]
       }
       , {
         components: 'باجيت شاورمان',
-        chickenPrice: 16
+        chickenPrice: 15
       }
       , {
         components: 'أم الرمان',
-        chickenPrice: 17
+        chickenPrice: 15
       }
       , {
         components: ' وايت صوص',
@@ -326,7 +332,7 @@
         
       }
       , {
-        components: ' الصوصات:عمبة,طحينة,مثومة,باربيكيو,دبس رمان',
+        components: 'صوصات: عمبة ,طحينة,مثومة,باربيكيو,دبس رمان',
         chickenPrice: 2
       }
       , {
@@ -341,6 +347,10 @@
         components: 'شاويرجر',
         chickenPrice: 25
       }
+      , {
+        components: 'دبل شراك',
+        chickenPrice: 30
+      }
       
     ]
     const popup = document.getElementById('popup');
@@ -354,7 +364,7 @@
           console.log(obj)
           console.log(`
             <div class="popup" id="popup">
-              <p>:المكونات ${obj.components}</p>
+              <p> ${obj.components}</p>
               <p class="chprice">
                 <span style="color: red">${obj.chickenPrice}₪ </span> :السعر
               </p>
@@ -363,7 +373,7 @@
           `)
           console.log(popup);
           popup.innerHTML = `
-            <p > إسم الصنف:${obj.components}</p>
+            <p >${obj.components}</p>
             <p class="chprice" >
               <span style="color: red">${obj.chickenPrice} ₪</span> :السعر
             </p>

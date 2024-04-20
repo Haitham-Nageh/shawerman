@@ -370,6 +370,7 @@ span {
     rgba(20, 16, 141, 1) 103%
   );
   padding-bottom: 30px;
+  font-family: system-ui;
 }
 
 .footer .containerx h3 {
